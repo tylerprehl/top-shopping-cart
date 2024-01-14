@@ -1,8 +1,22 @@
-# React + Vite
+# The Odin Project - Shopping Cart
+This project's goal is to demonstrate and reinforce knowledge of React Testing and Ecosystem, inlcuding the use of Vitest, Routers, and fetching data in React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### To run the game locally:
+- clone the repo
+- navigate your CLI to the repo folder
+- run ```npm init```
+- run ```npm run dev```
+<br>
+You can also view this project at (TBD)
 
-Currently, two official plugins are available:
+### To Do: 
+- set up project with Vitest
+- set up project with Prettier
+- formulate a design for my home/shopping pages
+- formulate a React basic design for those pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Main Takeaways
+- TBD
+
+### Other Interesting Things Learned
+- TBD
