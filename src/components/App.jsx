@@ -21,7 +21,7 @@ function App() {
             </p>
           </div>
           <p className="read-the-docs">
-            <Link to='shop'>Click here to get to the shop</Link>
+            <Link to='/store/shop'>Click here to get to the shop</Link>
           </p>
         </div>
       </div>

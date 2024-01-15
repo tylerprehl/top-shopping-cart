@@ -16,23 +16,13 @@ const Router = () => {
       ),
     },
     {
-      path: "shop",
-      element: (
-        <>
-          <NavBar />
-          <Shop />
-        </>
-      ),
+      path: "store",
+      element: <NavBar />,
+      children: [
+        { path: "shop", element: <Shop /> },
+        { path: "cart", element: <ShoppingCart /> },
+      ]
     },
-    {
-      path: "cart",
-      element: (
-        <>
-          <NavBar />
-          <ShoppingCart />
-        </>
-      ),
-    }
   ]);
 
   return (

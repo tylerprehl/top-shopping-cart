@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import gearIcon from '../assets/gear-icon.png';
 import cartIcon from '../assets/shopping-cart.png';
 
@@ -17,14 +17,15 @@ function NavBar() {
           <Link to="/">Home</Link>
         </div>
         <div className="link">
-          <Link to="/shop">Shop</Link>
+          <Link to="/store/shop">Shop</Link>
         </div>
         <div className="cart-container">
-          <Link to="/cart" className="link">
+          <Link to="/store/cart" className="link">
             <img src={cartIcon} className="cart" />
           </Link>
         </div>
       </div>
+      <Outlet />
     </>
   );
 }
