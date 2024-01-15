@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from '../assets/react.svg';
+import viteLogo from '/vite.svg';
+import { Link } from "react-router-dom";
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,10 +12,10 @@ function App() {
       <div className="background">
         <div className="content">
           <div>
-            <a href="https://vitejs.dev" target="_blank">
+            <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
               <img src={viteLogo} className="logo" alt="Vite logo" />
             </a>
-            <a href="https://react.dev" target="_blank">
+            <a href="https://react.dev" target="_blank" rel="noreferrer">
               <img src={reactLogo} className="logo react" alt="React logo" />
             </a>
           </div>
@@ -28,7 +29,7 @@ function App() {
             </p>
           </div>
           <p className="read-the-docs">
-            <span>Click on the Vite and React logos to learn more</span>
+            <Link to='shop'>Click here to get to the shop</Link>
           </p>
         </div>
       </div>
