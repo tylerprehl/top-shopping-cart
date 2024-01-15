@@ -11,12 +11,13 @@ You can also view this project at (TBD)
 
 ### To Do: 
 - testing for NavBar
-- set up project with Prettier
-- formulate a design for my home/shopping pages
-- formulate a React basic design for those pages
+- design React components to track shopping values
+  - this will likely require re-configuration of navigation scheme in Router.jsx
+- create generic Home page
+- create generic Shop page
 
 ### Main Takeaways
 - TBD
 
 ### Other Interesting Things Learned
-- TBD
+- 

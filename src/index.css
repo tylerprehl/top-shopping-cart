@@ -69,7 +69,7 @@ button:focus-visible {
 }
 
 .background {
-  min-width: 100vw;
+  min-width: 98vw;
   min-height: 100vh;
   background: url(./assets/techy-wallpaper.jpg) no-repeat center center/cover;
   display: flex;
