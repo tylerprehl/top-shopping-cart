@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import NavBar from './NavBar';
-import App from './App';
+import Store from './Store';
+import Home from './Home';
 import Shop from './Shop';
 import ShoppingCart from './ShoppingCart';
 
@@ -10,14 +10,14 @@ const Router = () => {
       path: "/",
       element: (
         <>
-          <NavBar />
-          <App />
+          <Store />
+          <Home />
         </>
       ),
     },
     {
       path: "store",
-      element: <NavBar />,
+      element: <Store />,
       children: [
         { path: "shop", element: <Shop /> },
         { path: "cart", element: <ShoppingCart /> },

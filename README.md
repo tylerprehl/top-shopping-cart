@@ -12,7 +12,7 @@ You can also view this project at (TBD)
 ### To Do: 
 - testing for NavBar
 - design React components to track shopping values
-  - this will likely require re-configuration of navigation scheme in Router.jsx
+  - re-create a NavBar component now that Store encompasses the NavBar and Shop/Cart (through Outlet)
 - create generic Home page
 - create generic Shop page
 

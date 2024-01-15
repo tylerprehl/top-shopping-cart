@@ -2,9 +2,9 @@ import { Link, Outlet } from 'react-router-dom';
 import gearIcon from '../assets/gear-icon.png';
 import cartIcon from '../assets/shopping-cart.png';
 
-import './NavBar.css';
+import './Store.css';
 
-function NavBar() {
+function Store() {
   return (
     <>
       <div className="navbar-container">
@@ -30,9 +30,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
-
-/*
-        <Link to="/">Home</Link>
-        <Link to="shop">Shop</Link>
-*/
+export default Store;
