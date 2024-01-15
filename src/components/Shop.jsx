@@ -5,8 +5,8 @@ function Shop() {
 
   return (
     <>
-      <div className="background">
-        <div className="content">
+      <div className="">
+        <div className="">
           Welcome to the shop
         </div>
       </div>

@@ -10,7 +10,7 @@ This project's goal is to demonstrate and reinforce knowledge of React Testing a
 You can also view this project at (TBD)
 
 ### To Do: 
-- set up project with Vitest
+- testing for NavBar
 - set up project with Prettier
 - formulate a design for my home/shopping pages
 - formulate a React basic design for those pages

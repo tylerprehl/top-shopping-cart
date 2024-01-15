@@ -14,6 +14,7 @@
 }
 
 a {
+  
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -65,4 +66,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.background {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url(./assets/techy-wallpaper.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  min-height: 100vh;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5); 
 }

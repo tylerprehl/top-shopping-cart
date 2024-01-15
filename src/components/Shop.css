@@ -1,16 +1,7 @@
-.background {
-  min-width: 100vw;
-  min-height: 100vh;
-  background: url(../assets/techy-wallpaper.jpg) no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
+.shop-item {
+  color: white;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.5); 
+.shop-item:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
