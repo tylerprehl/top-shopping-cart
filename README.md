@@ -1,7 +1,7 @@
 # The Odin Project - Shopping Cart
 This project's goal is to demonstrate and reinforce knowledge of React Testing and Ecosystem, inlcuding the use of Vitest, Routers, and fetching data in React.
 
-### To run the game locally:
+### To run the shop locally:
 - clone the repo
 - navigate your CLI to the repo folder
 - run ```npm init```

@@ -1,8 +1,23 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
   text-align: center;
+}
+
+.background {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url(./assets/techy-wallpaper.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .logo {
@@ -11,10 +26,8 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -36,7 +49,7 @@
 .card {
   padding: 2em;
 }
-
+/* 
 .read-the-docs {
-  color: #888;
-}
+  color: rgba(255, 255, 255, 0.8);
+} */
