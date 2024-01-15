@@ -1,6 +1,6 @@
 // import './Shop.css';
 
-function ShoppingCart() {
+function Cart() {
 
   return (
     <>
@@ -13,4 +13,4 @@ function ShoppingCart() {
   )
 }
 
-export default ShoppingCart;
+export default Cart;

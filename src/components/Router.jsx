@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Store from './Store';
 import Home from './Home';
 import Shop from './Shop';
-import ShoppingCart from './ShoppingCart';
+import Cart from './Cart';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -20,7 +20,7 @@ const Router = () => {
       element: <Store />,
       children: [
         { path: "shop", element: <Shop /> },
-        { path: "cart", element: <ShoppingCart /> },
+        { path: "cart", element: <Cart /> },
       ]
     },
   ]);

@@ -10,11 +10,12 @@ This project's goal is to demonstrate and reinforce knowledge of React Testing a
 You can also view this project at (TBD)
 
 ### To Do: 
-- testing for NavBar
-- design React components to track shopping values
-  - re-create a NavBar component now that Store encompasses the NavBar and Shop/Cart (through Outlet)
+- testing for what's created so far!
+  - "NavBar" (need to re-create now that Store encompasses the NavBar and Shop/Cart through Outlet)
+- design React components to track shopping cart values
 - create generic Home page
 - create generic Shop page
+- create generic Cart page
 
 ### Main Takeaways
 - TBD
