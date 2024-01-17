@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import NavBar from './NavBar';
-import './Store.css';
+import '../styles/Store.css';
 
 function Store() {
   // useState for what's currently in the cart

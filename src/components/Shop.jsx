@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import './Shop.css';
+import '../styles/Shop.css';
 
 function Shop() {
 
