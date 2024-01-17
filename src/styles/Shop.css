@@ -1,0 +1,17 @@
+/*
+.background {
+  background: rgb(29, 29, 29);
+}
+
+.content {
+  background-color: rgb(24, 24, 24) ;
+}
+*/
+
+.shop-item {
+  color: white;
+}
+
+.shop-item:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
