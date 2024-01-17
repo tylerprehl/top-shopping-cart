@@ -1,30 +1,14 @@
-import { Link, Outlet } from 'react-router-dom';
-import gearIcon from '../assets/gear-icon.png';
-import cartIcon from '../assets/shopping-cart.png';
-
+import { Outlet } from 'react-router-dom';
+import NavBar from './NavBar';
 import './Store.css';
 
 function Store() {
+  // useState for what's currently in the cart
+
+
   return (
     <>
-      <div className="navbar-container">
-        <div className="logo-container">
-          <Link to="/" className="link">
-            <img src={gearIcon} className="logo" />
-          </Link>
-        </div>
-        <div className="link">
-          <Link to="/">Home</Link>
-        </div>
-        <div className="link">
-          <Link to="/store/shop">Shop</Link>
-        </div>
-        <div className="cart-container">
-          <Link to="/store/cart" className="link">
-            <img src={cartIcon} className="cart" />
-          </Link>
-        </div>
-      </div>
+      <NavBar />
       <Outlet />
     </>
   );

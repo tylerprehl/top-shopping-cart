@@ -69,9 +69,9 @@ button:focus-visible {
 }
 
 .background {
-  min-width: 98vw;
+  min-width: 99vw;
   min-height: 100vh;
-  background: url(./assets/techy-wallpaper.jpg) no-repeat center center/cover;
+  /* background: url(./assets/techy-wallpaper.jpg) no-repeat center center/cover; */
   display: flex;
   justify-content: center;
 }
@@ -82,5 +82,5 @@ button:focus-visible {
   width: 60vw;
   min-height: 100vh;
   padding: 50px;
-  background-color: rgba(0, 0, 0, 0.5); 
+  /* background-color: rgba(0, 0, 0, 0.5);  */
 }

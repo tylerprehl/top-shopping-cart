@@ -16,6 +16,8 @@ You can also view this project at (TBD)
 - create generic Home page
 - create generic Shop page
 - create generic Cart page
+- create generic Item page
+- media query Menu button (to avoid squishing NavBar circles)
 
 ### Main Takeaways
 - TBD
