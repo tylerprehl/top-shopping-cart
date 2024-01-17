@@ -20,6 +20,7 @@ You can also view this project at (TBD)
 - create generic Cart page
   - may need another component like ItemInCart
 - media query Menu button (to avoid squishing NavBar circles)
+- figure out how to change background between Home and other pages
 
 ### Main Takeaways
 - TBD
