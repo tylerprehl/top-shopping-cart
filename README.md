@@ -9,14 +9,16 @@ This project's goal is to demonstrate and reinforce knowledge of React Testing a
 <br>
 You can also view this project at (TBD)
 
-### To Do: 
-- testing for what's created so far!
-  - "NavBar" (need to re-create now that Store encompasses the NavBar and Shop/Cart through Outlet)
-- design React components to track shopping cart values
-- create generic Home page
+### To Do:
+- create generic ItemCard
 - create generic Shop page
+  - should contain several ItemCards that link to their specific ItemPages
+- create generic ItemPage
+  - this is where shopping cart data will be updated from!
+  - don't forget to inclue 
+- design React components to track shopping cart values
 - create generic Cart page
-- create generic Item page
+  - may need another component like ItemInCart
 - media query Menu button (to avoid squishing NavBar circles)
 
 ### Main Takeaways
