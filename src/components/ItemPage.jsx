@@ -10,9 +10,7 @@ const ItemPage = () => {
     console.log(allProducts);
     setProduct(
       allProducts.find((item) => {
-        console.log(`Current ID: ${item.id}, Product ID: ${productId}`);
         if (item.id === Number(productId)) {
-          console.log('True!');
           return true;
         }
       }),
