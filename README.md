@@ -10,13 +10,11 @@ This project's goal is to demonstrate and reinforce knowledge of React Testing a
 You can also view this project at (TBD)
 
 ### To Do:
-- create generic Shop page
-  - get the data into Shop.jsx
-  - map of ItemCards that link to their specific ItemPages
-- create generic ItemCard
 - create generic ItemPage
+
+- make ItemCards Link to their respect ItemPages
+- create real content of ItemPage
   - this is where shopping cart data will be updated from!
-  - don't forget to inclue 
 - design React components to track shopping cart values
 - create generic Cart page
   - may need another component like ItemInCart

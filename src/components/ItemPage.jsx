@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-const Profile = () => {
+const ItemPage = () => {
   const { itemId } = useParams();
 
   // get item 
@@ -22,4 +22,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ItemPage;

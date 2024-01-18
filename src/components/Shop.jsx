@@ -1,6 +1,16 @@
 import { useState, useEffect } from 'react';
 import getStoreProductsList from './getStoreProducts';
+import ItemCard from './ItemCard';
 import '../styles/Shop.css';
+
+function trimDescription(description) {
+  let trimmedDescription = description.substr(0, 100);
+  trimmedDescription = trimmedDescription.substr(
+    0,
+    Math.min(trimmedDescription.length, trimmedDescription.lastIndexOf(' ')),
+  );
+  return trimmedDescription + '...';
+}
 
 function Shop() {
   const [products, setProducts] = useState([]);
@@ -18,10 +28,20 @@ function Shop() {
     <>
       <h1>Shop</h1>
       <p className="item-cards-container">
-          Welcome to the shop
+        {products.map((product) => {
+          return (
+            <ItemCard
+              key={product.id}
+              name={product.name}
+              description={trimDescription(product.description)}
+              price={product.price}
+              imageUrl={product.imageUrl}
+            />
+          );
+        })}
       </p>
     </>
-  )
+  );
 }
 
 export default Shop;

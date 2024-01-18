@@ -11,11 +11,13 @@ async function getStoreProductsList() {
   // the only real purpose of this is to trim down the original JSON
   const productsJson = await fetchStoreProducts();
   const productsArray = productsJson.map((productJson) => {
+    const productId = productJson.id;
     const productName = productJson.title;
     const productDescription = productJson.description;
     const productPrice = productJson.price;
     const productImageUrl = productJson.image;
     return {
+      id: productId,
       name: productName,
       description: productDescription,
       price: productPrice,
