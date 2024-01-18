@@ -4,13 +4,20 @@ import PropTypes from 'prop-types';
 import ItemCard from './ItemCard';
 import '../styles/Shop.css';
 
-function trimDescription(description) {
-  let trimmedDescription = description.substr(0, 100);
-  trimmedDescription = trimmedDescription.substr(
-    0,
-    Math.min(trimmedDescription.length, trimmedDescription.lastIndexOf(' ')),
-  );
-  return trimmedDescription + '...';
+function trimString(description, charsAllowed) {
+
+  
+  if (description.length > charsAllowed) {
+    let trimmedDescription = description.substr(0, charsAllowed);
+    trimmedDescription = trimmedDescription.substr(
+      0,
+      Math.min(trimmedDescription.length, trimmedDescription.lastIndexOf(' ')),
+    );
+    return trimmedDescription + '...';
+  }
+  else {
+    return description;
+  }
 }
 
 function Shop() {
@@ -25,8 +32,8 @@ function Shop() {
             <ItemCard
               key={product.id}
               id={product.id}
-              name={product.name}
-              description={trimDescription(product.description)}
+              name={trimString(product.name, 60)}
+              description={trimString(product.description, 100)}
               price={product.price}
               imageUrl={product.imageUrl}
             />

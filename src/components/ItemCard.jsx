@@ -6,10 +6,12 @@ function ItemCard({ id, name, description, price, imageUrl }) {
   return (
     <>
       <Link to={`/store/shop/${id.toString()}`} className="item-card">
+      <div className="image-background">
+          <img src={imageUrl} alt={name} className="item-image"></img>
+        </div>
         <div className="item-name">
           <strong>{name}</strong>
         </div>
-        <img src={imageUrl} alt={name} className="item-image"></img>
         <div className="item-price">
           <strong>${price}</strong>
         </div>
