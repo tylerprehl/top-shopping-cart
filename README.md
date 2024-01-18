@@ -11,7 +11,7 @@ You can also view this project at (TBD)
 
 ### To Do:
 - create generic ItemPage
-
+  - should make use of useParam and productItems
 - make ItemCards Link to their respect ItemPages
 - create real content of ItemPage
   - this is where shopping cart data will be updated from!
@@ -28,3 +28,4 @@ You can also view this project at (TBD)
 
 ### Other Interesting Things Learned
 - div elements have the WAI-ARIA role of 'generic'
+- got a little jumpstart on using React context (probably not in best-practice format)

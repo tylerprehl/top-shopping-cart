@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
-import getStoreProductsList from './getStoreProducts';
+import { useOutletContext } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 import ItemCard from './ItemCard';
 import '../styles/Shop.css';
 
@@ -13,25 +14,17 @@ function trimDescription(description) {
 }
 
 function Shop() {
-  const [products, setProducts] = useState([]);
-  // each item card Links to the appropriate idemId URL
-  useEffect(() => {
-    async function getAndSetProducts() {
-      const productList = await getStoreProductsList();
-      console.log(productList);
-      setProducts(productList);
-    }
-    getAndSetProducts();
-  }, []);
+  const [allProducts] = useOutletContext([]);
 
   return (
     <>
       <h1>Shop</h1>
-      <p className="item-cards-container">
-        {products.map((product) => {
+      <section className="item-cards-container">
+        {allProducts.map((product) => {
           return (
             <ItemCard
               key={product.id}
+              id={product.id}
               name={product.name}
               description={trimDescription(product.description)}
               price={product.price}
@@ -39,9 +32,14 @@ function Shop() {
             />
           );
         })}
-      </p>
+      </section>
     </>
   );
 }
+
+Shop.propTypes = {
+  allProducts: PropTypes.array, 
+}
+
 
 export default Shop;

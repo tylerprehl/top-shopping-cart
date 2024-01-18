@@ -21,7 +21,7 @@ const Router = () => {
       element: <Store />,
       children: [
         { path: 'shop', element: <Shop /> },
-        { path: 'shop/:itemId', element: <ItemPage /> },
+        { path: 'shop/:productId', element: <ItemPage /> },
         { path: 'cart', element: <Cart /> },
       ],
     },

@@ -1,23 +1,27 @@
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { useParams, useOutletContext } from 'react-router-dom';
 
 const ItemPage = () => {
-  const { itemId } = useParams();
+  const { productId } = useParams();
+  const [allProducts] = useOutletContext([]);
+  const [product, setProduct] = useState({});
 
-  // get item 
+  useEffect(() => {
+    console.log(allProducts);
+    setProduct(
+      allProducts.find((item) => {
+        console.log(`Current ID: ${item.id}, Product ID: ${productId}`);
+        if (item.id === Number(productId)) {
+          console.log('True!');
+          return true;
+        }
+      }),
+    );
+  }, [allProducts, productId]);
 
   return (
     <div>
-      <h1>Hello from profile page!</h1>
-      <p>So, how are you?</p>
-      <hr />
-      <h2>The profile visited is here:</h2>
-      {name === "popeye" ? (
-        <Popeye />
-      ) : name === "spinach" ? (
-        <Spinach />
-      ) : (
-        <DefaultProfile />
-      )}
+      <h1>{product.name}</h1>
     </div>
   );
 };
