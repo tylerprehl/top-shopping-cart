@@ -5,11 +5,9 @@ function Home() {
   return (
     <>
       <h1>Home</h1>
-      <div className="">
-        <div className="">
+      <p className="home-container">
           Welcome to the Home page
-        </div>
-      </div>
+      </p>
     </>
   )
 }

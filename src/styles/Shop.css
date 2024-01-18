@@ -8,10 +8,9 @@
 }
 */
 
-.shop-item {
-  color: white;
+.item-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
-.shop-item:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}

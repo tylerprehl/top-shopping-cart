@@ -10,9 +10,10 @@ This project's goal is to demonstrate and reinforce knowledge of React Testing a
 You can also view this project at (TBD)
 
 ### To Do:
-- create generic ItemCard
 - create generic Shop page
-  - should contain several ItemCards that link to their specific ItemPages
+  - get the data into Shop.jsx
+  - map of ItemCards that link to their specific ItemPages
+- create generic ItemCard
 - create generic ItemPage
   - this is where shopping cart data will be updated from!
   - don't forget to inclue 
@@ -23,7 +24,9 @@ You can also view this project at (TBD)
 - figure out how to change background between Home and other pages
 
 ### Main Takeaways
-- TBD
+- testing with Vitest is awesome!
+  - it makes testing the effects of interactions suuper clean and easy
+  - it helped me focus on proper accessibility (by using getByRole)
 
 ### Other Interesting Things Learned
-- 
+- div elements have the WAI-ARIA role of 'generic'
