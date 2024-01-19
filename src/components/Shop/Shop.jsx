@@ -27,15 +27,15 @@ function Shop() {
     <>
       <h1>Shop</h1>
       <section className="item-cards-container">
-        {allProducts.map((product) => {
+        { Object.entries(allProducts).map(([productId, productData]) => {
           return (
             <ItemCard
-              key={product.id}
-              id={product.id}
-              name={trimString(product.name, 60)}
-              description={trimString(product.description, 100)}
-              price={product.price}
-              imageUrl={product.imageUrl}
+              key={productId}
+              id={productId}
+              name={trimString(productData.name, 60)}
+              description={trimString(productData.description, 100)}
+              price={productData.price}
+              imageUrl={productData.imageUrl}
             />
           );
         })}

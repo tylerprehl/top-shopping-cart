@@ -22,7 +22,7 @@ function ItemCard({ id, name, description, price, imageUrl }) {
 }
 
 ItemCard.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   name: PropTypes.string,
   description: PropTypes.string,
   price: PropTypes.number,

@@ -6,21 +6,18 @@ async function getStoreProductsList() {
   );
   const productsJson = await productsResponse.json();
 
-  const productsArray = productsJson.map((productJson) => {
-    const productId = productJson.id;
-    const productName = productJson.title;
-    const productDescription = productJson.description;
-    const productPrice = productJson.price;
-    const productImageUrl = productJson.image;
-    return {
-      id: productId,
-      name: productName,
-      description: productDescription,
-      price: productPrice,
-      imageUrl: productImageUrl,
+  let productsDict = {};
+
+  productsJson.forEach((productJson) => {
+    productsDict[productJson.id] = {
+      name: productJson.title,
+      description: productJson.description,
+      price: productJson.price,
+      imageUrl: productJson.image,
     };
   });
-  return productsArray;
+  console.log(productsDict);
+  return productsDict;
 }
 
 export default getStoreProductsList;

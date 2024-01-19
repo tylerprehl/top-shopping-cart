@@ -7,13 +7,14 @@ import './Store.css';
 
 function Store() {
   // useState for what's currently in the cart
-  const [allProducts, setProducts] = useState([]);
+  const [allProducts, setProducts] = useState({});
   // each item card Links to the appropriate idemId URL
   useEffect(() => {
     async function getAndSetProducts() {
       const productList = await getStoreProductsList();
       setProducts(productList);
     }
+    
     getAndSetProducts();
   }, []);
 
