@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import '../styles/ItemCard.css';
+import './ItemCard.css';
 
 function ItemCard({ id, name, description, price, imageUrl }) {
   return (

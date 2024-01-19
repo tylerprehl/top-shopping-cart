@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import getStoreProductsList from './getStoreProducts';
-import NavBar from './NavBar';
-import '../styles/Store.css';
+import getStoreProductsList from '../getStoreProducts';
+import NavBar from '../NavBar';
+import './Store.css';
 
 function Store() {
   // useState for what's currently in the cart

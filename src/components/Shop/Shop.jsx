@@ -1,8 +1,8 @@
 import { useOutletContext } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import ItemCard from './ItemCard';
-import '../styles/Shop.css';
+import ItemCard from '../ItemCard/ItemCard';
+import './Shop.css';
 
 function trimString(description, charsAllowed) {
 
