@@ -1,15 +1,11 @@
-async function fetchStoreProducts() {
+async function getStoreProductsList() {
+  // the only real purpose of this is to trim down the original JSON
   const productsResponse = await fetch(
     `https://fakestoreapi.com/products/category/electronics`,
     { mode: 'cors' },
   );
   const productsJson = await productsResponse.json();
-  return productsJson;
-}
 
-async function getStoreProductsList() {
-  // the only real purpose of this is to trim down the original JSON
-  const productsJson = await fetchStoreProducts();
   const productsArray = productsJson.map((productJson) => {
     const productId = productJson.id;
     const productName = productJson.title;

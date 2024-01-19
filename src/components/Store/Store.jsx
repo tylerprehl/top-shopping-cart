@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import getStoreProductsList from '../getStoreProducts';
+import getStoreProductsList from './getStoreProducts';
 import NavBar from '../NavBar';
 import './Store.css';
 
