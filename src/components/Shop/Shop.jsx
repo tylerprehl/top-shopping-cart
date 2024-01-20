@@ -27,7 +27,7 @@ function Shop() {
     <>
       <h1>Shop</h1>
       <section className="item-cards-container">
-        { Object.entries(allProducts).map(([productId, productData]) => {
+        {Object.entries(allProducts).map(([productId, productData]) => {
           return (
             <ItemCard
               key={productId}

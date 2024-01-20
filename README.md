@@ -2,38 +2,40 @@
 This project's goal is to demonstrate and reinforce knowledge of React Testing and Ecosystem, inlcuding the use of Vitest, Routers, and fetching data in React.
 
 ### To run the shop locally:
-- clone the repo
-- navigate your CLI to the repo folder
-- run ```npm init```
-- run ```npm run dev```
+- Clone the repo
+- Navigate your CLI to the repo folder
+- Run ```npm init```
+- Run ```npm run dev```
 <br>
 You can also view this project at (TBD)
 
 ### To Do:
-- test linking from ItemCard to ItemPage
-- create real content of ItemPage
-  - this is where shopping cart data will be updated from!
-  - design React components to track shopping cart values
-- create generic Cart page
-  - needs access to what's in the cart
-    - can also update what's in the cart
-  - create generic ItemInCart component
-- create generic Default/Error pages for ItemPage
-- media query Menu button (to avoid squishing NavBar circles)
-- manually entering known item ID results in an error page
-  - maybe has to do with the use of Context and the data available when it goes to render ItemPage?
-- figure out how to change background between Home and other pages
-- why does background zoom in on Shop page?
-  - started occurring after I included ItemCards in ItemCard.jsx
-  - removing images from ItemCards makes it better, but not completely
-  - not that it matters since I want to change the background of the Shop page, but still weird...
+- Test linking from ItemCard to ItemPage
+- Create real content of ItemPage
+  - This is where shopping cart data will be updated from!
+  - Design React components to track shopping cart values
+- Create generic Cart page
+  - Needs access to what's in the cart
+    - Can also update what's in the cart
+  - Create generic ItemInCart component
+- Create generic Default/Error pages for ItemPage
+- Media query Menu button (to avoid squishing NavBar circles)
+- Manually entering known item ID results in an error page
+  - Maybe has to do with the use of Context and the data available when it goes to render ItemPage?
+- Figure out how to change background between Home and other pages
+- Why does background zoom in on Shop page?
+  - Started occurring after I included ItemCards in ItemCard.jsx
+  - Removing images from ItemCards makes it better, but not completely
+  - Not that it matters since I want to change the background of the Shop page, but still weird...
 
 ### Main Takeaways
-- testing with Vitest is awesome!
-  - it makes testing the effects of interactions suuper clean and easy
-  - it helped me focus on proper accessibility (by using getByRole)
+- Testing with Vitest is awesome!
+  - It makes testing the effects of interactions suuper clean and easy
+  - It helped me focus on proper accessibility (by using getByRole)
 
 ### Other Interesting Things Learned
-- div elements have the WAI-ARIA role of 'generic'
-- got a little jumpstart on using React Context (probably not in best-practice format)
+- Div elements have the WAI-ARIA role of 'generic'
+- Got a little jumpstart on using React Context (probably not in best-practice format)
   - I used it as a method for passing data through the Outlet element
+- useOutlookContext assumes that the data is immediately available
+  - This may seem wildly intuitive, but it led to a problem where I was trying to use my 'allProducts' state variable from Store.jsx in ItemPage.jsx to pick the correct product from allProducts based on the parameter in the URL. 

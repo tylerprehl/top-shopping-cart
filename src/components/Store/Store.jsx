@@ -7,21 +7,23 @@ import './Store.css';
 
 function Store() {
   // useState for what's currently in the cart
-  const [allProducts, setProducts] = useState({});
+  const [allProducts, setAllProducts] = useState({});
+  const [finishedLoading, setLoadingState] = useState(false)
   // each item card Links to the appropriate idemId URL
   useEffect(() => {
     async function getAndSetProducts() {
       const productList = await getStoreProductsList();
-      setProducts(productList);
+      setAllProducts(productList);
+      setLoadingState(true);
     }
-    
+
     getAndSetProducts();
   }, []);
 
   return (
     <>
       <NavBar />
-      <Outlet context={[allProducts]}/>
+      <Outlet context={[allProducts, finishedLoading]}/>
     </>
   );
 }

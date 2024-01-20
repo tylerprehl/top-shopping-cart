@@ -3,13 +3,15 @@ import { useParams, useOutletContext } from 'react-router-dom';
 
 const ItemPage = () => {
   const { productId } = useParams();
-  const [allProducts] = useOutletContext([]);
+  const [allProducts, finishedLoading] = useOutletContext();
   const [productData, setProduct] = useState({});
 
   useEffect(() => {
-    console.log(allProducts);
-    setProduct(allProducts[productId]);
-  }, [allProducts, productId]);
+    if (finishedLoading) {
+      console.log(allProducts);
+      setProduct(allProducts[productId]);
+    }
+  }, [allProducts, productId, finishedLoading]);
 
   return (
     <div>
