@@ -20,6 +20,8 @@ You can also view this project at (TBD)
   - Create generic ItemInCart component
 - Create generic Default/Error pages for ItemPage
 - Media query Menu button (to avoid squishing NavBar circles)
+- Media query (and good math) for side-by-side image/description vs stacked on ItemPage
+  - create more standardized image size like on Shop page
 - Manually entering known item ID results in an error page
   - Maybe has to do with the use of Context and the data available when it goes to render ItemPage?
 - Figure out how to change background between Home and other pages

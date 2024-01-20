@@ -9,6 +9,7 @@ function Store() {
   // useState for what's currently in the cart
   const [allProducts, setAllProducts] = useState({});
   const [finishedLoading, setLoadingState] = useState(false)
+  
   // each item card Links to the appropriate idemId URL
   useEffect(() => {
     async function getAndSetProducts() {
