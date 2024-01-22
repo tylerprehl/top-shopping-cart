@@ -8,8 +8,9 @@ import './Store.css';
 function Store() {
   // useState for what's currently in the cart
   const [allProducts, setAllProducts] = useState({});
+  const [cartProducts, setCartProducts] = useState({});
   const [finishedLoading, setLoadingState] = useState(false)
-  
+
   // each item card Links to the appropriate idemId URL
   useEffect(() => {
     async function getAndSetProducts() {
@@ -24,7 +25,7 @@ function Store() {
   return (
     <>
       <NavBar />
-      <Outlet context={[allProducts, finishedLoading]}/>
+      <Outlet context={[allProducts, finishedLoading, cartProducts, setCartProducts]}/>
     </>
   );
 }

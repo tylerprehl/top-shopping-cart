@@ -11,17 +11,16 @@ You can also view this project at (TBD)
 
 ### To Do:
 - Test linking from ItemCard to ItemPage
-- Create real content of ItemPage
-  - This is where shopping cart data will be updated from!
-  - Design React components to track shopping cart values
+- Test increase/decrease item count
+- Test adding item to cart
 - Create generic Cart page
   - Needs access to what's in the cart
     - Can also update what's in the cart
   - Create generic ItemInCart component
-- Create generic Default/Error pages for ItemPage
+- Create generic Default/Error pages
 - Media query Menu button (to avoid squishing NavBar circles)
 - Media query (and good math) for side-by-side image/description vs stacked on ItemPage
-  - create more standardized image size like on Shop page
+  - create more standardized image size like on Shop page (see ItemCard.css for example)
 - Manually entering known item ID results in an error page
   - Maybe has to do with the use of Context and the data available when it goes to render ItemPage?
 - Figure out how to change background between Home and other pages
