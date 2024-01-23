@@ -1,11 +1,20 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gearIcon from '../../assets/gear-icon.png';
 import cartIcon from '../../assets/shopping-cart.png';
 import './NavBar.css';
 
 function NavBar({ cartProducts }) {
-
-
+  console.log(cartProducts);
+  const keys = Object.keys(cartProducts);
+  console.log(keys);
+  console.log(cartProducts[keys[0]]);
+  console.log(keys.reduce((accumulator, productId) => {
+    accumulator + Number(cartProducts[productId]);
+  }));
+  console.log(Object.keys(cartProducts).reduce((accumulator, productId) => {
+                  accumulator + Number(cartProducts[productId])
+                  }));
 
   return (
     <>
@@ -24,7 +33,13 @@ function NavBar({ cartProducts }) {
         <div className="cart-container">
           <Link to="/store/cart" className="link">
             <img src={cartIcon} alt="cart icon" className="cart" />
-            <div className="cart-items-count">1</div>
+            {Object.entries(cartProducts).length > 0 ?
+              <div className="cart-items-count">
+                {Object.keys(cartProducts).reduce((accumulator, productId) => {
+                  accumulator + Number(cartProducts[productId]);
+                })}
+              </div>
+            : null}
           </Link>
         </div>
       </div>

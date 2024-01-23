@@ -31,6 +31,7 @@ const ItemPage = () => {
     alert(
       `${quantity} of ${productData.name} ${quantity === 1 ? 'has' : 'have'} been added to the cart!`,
     );
+    // console.log(cartProducts);
   };
 
   useEffect(() => {
