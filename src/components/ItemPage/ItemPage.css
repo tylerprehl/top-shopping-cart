@@ -9,10 +9,19 @@ p {
   gap: 20px;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 300px;
+  width: 450px;
+}
+
 .product-image {
   display: flex;
   flex-grow: 0;
-  width: 50vw;
+  height: 300px;
 }
 
 .item-info-container {

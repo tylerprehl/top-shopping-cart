@@ -40,11 +40,13 @@ const ItemPage = () => {
   return (
     <div className="item-page-container">
       <h1>{productData.name}</h1>
-      <img
-        className="product-image"
-        src={productData.imageUrl}
-        alt={productData.name}
-      ></img>
+      <div className="image-container">
+        <img
+          className="product-image"
+          src={productData.imageUrl}
+          alt={productData.name}
+        ></img>
+      </div>
       <section className="item-info-container">
         <p className="edit-quantity-container">
           <button
