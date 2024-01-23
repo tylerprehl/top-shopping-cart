@@ -41,6 +41,6 @@ You can also view this project at (TBD)
 - useOutlookContext assumes that the data is immediately available
   - This may seem wildly intuitive, but it led to a problem where I was trying to use my 'allProducts' state variable from Store.jsx in ItemPage.jsx to pick the correct product from allProducts based on the parameter in the URL (to display on the page). The gist of the issue was when you manually navigated to a product page (ex - .../store/shop/9), the page would throw a 'value is null' error because it would try to load the component before the API call that was busy getting all the products from Fakestore finished. This resulted in the component erroring out on its render
   - The solution was passing an aptly named second state variable (finishedLoading) to ItemPage.jsx so that it didn't attempt to access allProducts before it was ready
-  - If you write a multi-line callback function for reduce, don't forget the return statement (facepalm)
-  - If you need to copy an object, use the spread operator to do so!
-    - 'new Object()' is not the way
+- If you write a multi-line callback function for reduce, don't forget the return statement (facepalm)
+- If you need to copy an object, use the spread operator to do so!
+  - 'new Object()' is not the way
