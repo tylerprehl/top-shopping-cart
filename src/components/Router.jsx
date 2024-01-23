@@ -3,7 +3,7 @@ import Store from './Store/Store';
 import Home from './Home/Home';
 import Shop from './Shop/Shop';
 import ItemPage from './ItemPage/ItemPage';
-import Cart from './Cart';
+import Cart from './Cart/Cart';
 
 const Router = () => {
   const router = createBrowserRouter([

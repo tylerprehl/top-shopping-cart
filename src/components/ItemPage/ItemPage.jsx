@@ -28,7 +28,9 @@ const ItemPage = () => {
       cartProducts[productId] = quantity;
       setCartProducts(new Object(cartProducts));
     }
-    alert(`${quantity} of ${productData.name} ${quantity === 1 ? 'has' : 'have'} been added to the cart!`);
+    alert(
+      `${quantity} of ${productData.name} ${quantity === 1 ? 'has' : 'have'} been added to the cart!`,
+    );
   };
 
   useEffect(() => {

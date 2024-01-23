@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
-import gearIcon from '../assets/gear-icon.png';
-import cartIcon from '../assets/shopping-cart.png';
+import gearIcon from '../../assets/gear-icon.png';
+import cartIcon from '../../assets/shopping-cart.png';
+import './NavBar.css';
 
-function NavBar() {
+function NavBar({ cartProducts }) {
+
+
 
   return (
     <>
@@ -21,6 +24,7 @@ function NavBar() {
         <div className="cart-container">
           <Link to="/store/cart" className="link">
             <img src={cartIcon} alt="cart icon" className="cart" />
+            <div className="cart-items-count">1</div>
           </Link>
         </div>
       </div>

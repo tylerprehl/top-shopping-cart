@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import getStoreProductsList from './getStoreProducts';
-import NavBar from '../NavBar';
+import NavBar from '../NavBar/NavBar';
 import './Store.css';
 
 function Store() {
@@ -24,7 +24,7 @@ function Store() {
 
   return (
     <>
-      <NavBar />
+      <NavBar cartProducts={cartProducts}/>
       <Outlet context={[allProducts, finishedLoading, cartProducts, setCartProducts]}/>
     </>
   );
