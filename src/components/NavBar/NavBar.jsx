@@ -5,17 +5,6 @@ import cartIcon from '../../assets/shopping-cart.png';
 import './NavBar.css';
 
 function NavBar({ cartProducts }) {
-  console.log(cartProducts);
-  const keys = Object.keys(cartProducts);
-  console.log(keys);
-  console.log(cartProducts[keys[0]]);
-  console.log(keys.reduce((accumulator, productId) => {
-    accumulator + Number(cartProducts[productId]);
-  }));
-  console.log(Object.keys(cartProducts).reduce((accumulator, productId) => {
-                  accumulator + Number(cartProducts[productId])
-                  }));
-
   return (
     <>
       <div className="navbar-container">
@@ -35,8 +24,8 @@ function NavBar({ cartProducts }) {
             <img src={cartIcon} alt="cart icon" className="cart" />
             {Object.entries(cartProducts).length > 0 ?
               <div className="cart-items-count">
-                {Object.keys(cartProducts).reduce((accumulator, productId) => {
-                  accumulator + Number(cartProducts[productId]);
+                {Object.values(cartProducts).reduce((accumulator, itemCount) => {
+                  return accumulator + Number(itemCount);
                 })}
               </div>
             : null}
