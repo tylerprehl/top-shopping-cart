@@ -23,15 +23,14 @@ const ItemPage = () => {
   const handleAddToCart = () => {
     if (productId in cartProducts) {
       cartProducts[productId] = cartProducts[productId] + quantity;
-      setCartProducts(new Object(cartProducts));
+      setCartProducts({...cartProducts});
     } else {
       cartProducts[productId] = quantity;
-      setCartProducts(new Object(cartProducts));
+      setCartProducts({...cartProducts});
     }
     alert(
       `${quantity} of ${productData.name} ${quantity === 1 ? 'has' : 'have'} been added to the cart!`,
     );
-    // console.log(cartProducts);
   };
 
   useEffect(() => {
