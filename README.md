@@ -13,6 +13,7 @@ You can also view this project at (TBD)
 - Test linking from ItemCard to ItemPage
 - Test increase/decrease item count
 - Test adding item to cart
+- NavBar doesn't update with latest cartProducts data when it's updated in ItemPage.jsx
 - Create generic Cart page
   - Needs access to what's in the cart
     - Can also update what's in the cart
