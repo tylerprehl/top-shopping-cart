@@ -22,13 +22,15 @@ function NavBar({ cartProducts }) {
         <div className="cart-container">
           <Link to="/store/cart" className="link">
             <img src={cartIcon} alt="cart icon" className="cart" />
-            {Object.entries(cartProducts).length > 0 ?
+            {Object.entries(cartProducts).length > 0 ? (
               <div className="cart-items-count">
-                {Object.values(cartProducts).reduce((accumulator, itemCount) => {
-                  return accumulator + Number(itemCount);
-                })}
+                {Object.values(cartProducts).reduce(
+                  (accumulator, itemCount) => {
+                    return accumulator + Number(itemCount);
+                  },
+                )}
               </div>
-            : null}
+            ) : null}
           </Link>
         </div>
       </div>
