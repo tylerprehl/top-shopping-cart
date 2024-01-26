@@ -16,7 +16,7 @@ async function getStoreProductsList() {
       imageUrl: productJson.image,
     };
   });
-  console.log(productsDict);
+  // console.log(productsDict);
   return productsDict;
 }
 
