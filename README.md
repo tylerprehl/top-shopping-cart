@@ -18,16 +18,11 @@ You can also view this project at (TBD)
 - Media query Menu button (to avoid squishing NavBar circles)
 - Media query (and good math) for side-by-side image/description vs stacked on ItemPage
   - create more standardized image size like on Shop page (see ItemCard.css for example)
-- Manually entering known item ID results in an error page
-  - Maybe has to do with the use of Context and the data available when it goes to render ItemPage?
 - Figure out how to change background between Home and other pages
-- Why does background zoom in on Shop page?
-  - Started occurring after I included ItemCards in ItemCard.jsx
-  - Removing images from ItemCards makes it better, but not completely
-  - Not that it matters since I want to change the background of the Shop page, but still weird...
-- Tests I could write
-  - increasing/decreasing quantity count to add to cart on ItemPage
-  - ...not a whole lot because the project is mostly state management, not a ton of logic
+  - Why does background zoom in on Shop page?
+    - Started occurring after I included ItemCards in ItemCard.jsx
+    - Removing images from ItemCards makes it better, but not completely
+    - Not that it matters since I want to change the background of the Shop page, but still weird...
 
 ### Main Takeaways
 - Testing with Vitest is pretty cool!
