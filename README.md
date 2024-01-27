@@ -12,7 +12,6 @@ You can also view this project at (TBD)
 ### To Do:
 - Flesh out Cart page
   - Edit quantity of what's in the cart
-  - Delete item from cart entirely
 - Create generic Default/Error pages
 - Media query Menu button
 - Media query (and good math) for side-by-side image/description vs stacked on ItemPage
