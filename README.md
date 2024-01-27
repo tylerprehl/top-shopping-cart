@@ -17,10 +17,10 @@ You can also view this project at (TBD)
 - Media query Menu button
 - Media query (and good math) for side-by-side image/description vs stacked on ItemPage
 - Figure out how to change background between Home and other pages
-  - Why does background zoom in on Shop page?
-    - Started occurring after I included ItemCards in ItemCard.jsx
-    - Removing images from ItemCards makes it better, but not completely
-    - Not that it matters since I want to change the background of the Shop page, but still weird...
+  - The zoom of the background appears to be affected by:
+    - Margin/padding CSS on the page
+    - ...?
+    - Still unsure *why*
 
 ### Main Takeaways
 - Testing with Vitest is pretty cool!
