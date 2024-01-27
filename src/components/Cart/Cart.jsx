@@ -11,9 +11,15 @@ function Cart() {
       <h1>Cart</h1>
       <section>
         <div className="cart-items-container">
+          <hr></hr>
           {Object.keys(cartProducts).map((productId) => {
             console.log(productId);
-            return <ItemInCart name={allProducts[productId].name} />;
+            return (
+              <>
+                <ItemInCart name={allProducts[productId].name} quantity={cartProducts[productId]} imageUrl={allProducts[productId].imageUrl}/>
+                <hr></hr>
+              </>
+            )
           })}
         </div>
       </section>

@@ -10,14 +10,12 @@ This project's goal is to demonstrate and reinforce knowledge of React Testing a
 You can also view this project at (TBD)
 
 ### To Do:
-- Create generic Cart page
-  - Needs access to what's in the cart
-    - Can also update what's in the cart
-  - Create generic ItemInCart component
+- Flesh out Cart page
+  - Edit quantity of what's in the cart
+  - Delete item from cart entirely
 - Create generic Default/Error pages
-- Media query Menu button (to avoid squishing NavBar circles)
+- Media query Menu button
 - Media query (and good math) for side-by-side image/description vs stacked on ItemPage
-  - create more standardized image size like on Shop page (see ItemCard.css for example)
 - Figure out how to change background between Home and other pages
   - Why does background zoom in on Shop page?
     - Started occurring after I included ItemCards in ItemCard.jsx
