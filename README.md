@@ -26,7 +26,7 @@ You can also view this project at (TBD)
 - Testing with Vitest is pretty cool!
   - It makes testing the effects of user actions suuper clean and easy
   - It helped me recognize good accessibility practices (by using getByRole)
-  - Mock Service Worker (MSW) is super useful for API calls not passed in to components via functions
+- Mock Service Worker (MSW) is super useful for API calls not passed in to components via functions
 
 ### Other Interesting Things Learned
 - Got a little jumpstart on using React useOutletContext (probably not in best-practice form)
