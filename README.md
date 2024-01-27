@@ -21,6 +21,9 @@ You can also view this project at (TBD)
     - Margin/padding CSS on the page
     - ...?
     - Still unsure *why*
+- Make it Star Wars-themed
+  - Sell robots/equipment/ships from the SW universe
+  - Alas, I have more to learn and so maybe someday I'll come back to this...
 
 ### Main Takeaways
 - Testing with Vitest is pretty cool!
