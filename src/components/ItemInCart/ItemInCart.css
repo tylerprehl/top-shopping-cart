@@ -1,3 +1,8 @@
+hr {
+  width: 60vw;
+  margin: 10px 0;
+}
+
 .cart-item-container {
   display: flex;
   flex-direction: column;
@@ -19,4 +24,12 @@
   display: flex;
   flex-grow: 0;
   height: 200px;
+}
+
+
+.delete-button {
+  font-size: 20px;
+  color: white;
+  padding: 4px 40px;
+  background-color: rgb(74, 0, 0);
 }

@@ -3,25 +3,39 @@ import ItemInCart from '../ItemInCart/ItemInCart';
 import './Cart.css';
 
 function Cart() {
-  const [allProducts, finishedLoading, cartProducts, setCartProducts] =
+  const [allProducts,, cartProducts, setCartProducts] =
     useOutletContext();
+
+  const handleDeletion = (e) => {
+    const productId = e.target.id;
+    const newCartProducts = {...cartProducts};
+    delete newCartProducts[productId];
+    setCartProducts(newCartProducts);
+  };
 
   return (
     <>
       <h1>Cart</h1>
       <section>
-        <div className="cart-items-container">
-          <hr></hr>
-          {Object.keys(cartProducts).map((productId) => {
-            console.log(productId);
-            return (
-              <>
-                <ItemInCart name={allProducts[productId].name} quantity={cartProducts[productId]} imageUrl={allProducts[productId].imageUrl}/>
-                <hr></hr>
-              </>
-            )
-          })}
-        </div>
+        {Object.entries(cartProducts).length > 0 ? (
+          <div className="cart-items-container">
+            <hr></hr>
+            {Object.keys(cartProducts).map((productId) => {
+              return (
+                <ItemInCart
+                  key={productId}
+                  productId={productId}
+                  name={allProducts[productId].name}
+                  quantity={cartProducts[productId]}
+                  imageUrl={allProducts[productId].imageUrl}
+                  handleDeletion={handleDeletion}
+                />
+              );
+            })}
+          </div>
+        ) : (
+          <></>
+        )}
       </section>
     </>
   );
