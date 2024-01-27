@@ -26,10 +26,33 @@ hr {
   height: 200px;
 }
 
+.quantity-label {
+  padding-right: 20px;
+}
+
+.quantity-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0px 14px;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  background-color: #ffffff;
+}
+
+button.edit-quantity-button {
+  padding: 0px 14px;
+  margin: 0px;
+  font-size: 28px;
+}
 
 .delete-button {
   font-size: 20px;
   color: white;
   padding: 4px 40px;
+  margin-top: 10px;
   background-color: rgb(74, 0, 0);
 }

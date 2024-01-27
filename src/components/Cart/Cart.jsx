@@ -6,6 +6,23 @@ function Cart() {
   const [allProducts,, cartProducts, setCartProducts] =
     useOutletContext();
 
+  const handleIncreaseQuantity = (e) => {
+    const productId= e.target.id;
+    const newCartProducts = {...cartProducts};
+    newCartProducts[productId] = newCartProducts[productId] + 1;
+    setCartProducts(newCartProducts);
+  }
+  
+  const handleDecreaseQuantity = (e) => { 
+    const productId= e.target.id;
+    if (cartProducts[productId] > 1) {
+      const newCartProducts = {...cartProducts};
+      newCartProducts[productId] = newCartProducts[productId] -1;
+      setCartProducts(newCartProducts);
+    }
+  }
+  
+
   const handleDeletion = (e) => {
     const productId = e.target.id;
     const newCartProducts = {...cartProducts};
@@ -28,6 +45,8 @@ function Cart() {
                   name={allProducts[productId].name}
                   quantity={cartProducts[productId]}
                   imageUrl={allProducts[productId].imageUrl}
+                  handleIncreaseQuantity={handleIncreaseQuantity}
+                  handleDecreaseQuantity={handleDecreaseQuantity}
                   handleDeletion={handleDeletion}
                 />
               );
