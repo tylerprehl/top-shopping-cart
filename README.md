@@ -7,7 +7,7 @@ This project's goal is to demonstrate and reinforce knowledge of React Testing a
 - Run ```npm init```
 - Run ```npm run dev```
 <br>
-You can also view this project at https://070023cc.top-shopping-cart.pages.dev/store/cart
+You can also view this project at https://070023cc.top-shopping-cart.pages.dev/store/
 
 ### To Do:
 Note to the reader - for the sake of hitting my intended learning goals but continuing progression without getting hung up on any one project, as of 1/27/2024 I have left this project as it is, but the following are the improvements I would make to 'complete' the website as I envision it.
